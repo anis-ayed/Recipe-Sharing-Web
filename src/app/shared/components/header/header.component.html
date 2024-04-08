@@ -1,0 +1,27 @@
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="flex gap-1.5 items-center cursor-pointer">
+        <span>RECIPE SHARE</span>
+        <mat-icon>share</mat-icon>
+      </div>
+
+      <span class="flex flex-1"></span>
+      <div class="flex items-center">
+        <div class="profile-image-container">
+          <a class="cursor-pointer">
+            <img class="profile-image" src="../../../../assets/images/profile.gif" alt="Image de profil">
+          </a>
+        </div>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Paramètres</button>
+          <button mat-menu-item>Déconnexion</button>
+        </mat-menu>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>
