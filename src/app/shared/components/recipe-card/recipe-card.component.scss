@@ -1,5 +1,11 @@
 .card {
-  max-width: 400px;
+  max-width: 350px;
+  height: 500px;
+
+  .image-recipe {
+    min-width: 350px;
+    height: 350px;
+  }
 }
 
 .header-image {
